@@ -23,6 +23,11 @@ body {
   margin-right: auto;
   display: block;
   border-radius: 60%;
+  border: tomato solid 5px;
+}
+#avatar:hover {
+  width: 40%;
+  border: white solid 5px;
 }
 h1 {
   color: tomato;
