@@ -32,3 +32,17 @@ th {
 tr:hover {
   background-color: black;
 }
+
+/* topbar  open*/
+a {
+  text-decoration: none;
+  color: grey;
+  margin: 15px;
+  font-size: 30px;
+  float: right;
+}
+a:hover {
+  color: tomato;
+  font-size: 40px;
+}
+/* topbar  close*/
