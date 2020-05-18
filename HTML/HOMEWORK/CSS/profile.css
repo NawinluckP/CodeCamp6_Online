@@ -1,0 +1,89 @@
+/* * {
+  border: red 1px solid;
+} */
+body {
+  background-color: #2d2d2d;
+  text-align: center;
+  color: white;
+}
+/* containerProfile open */
+.containerProfile {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+/* item1 open */
+.item1 {
+  flex: 1;
+}
+#avatar {
+  width: 30%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 60%;
+}
+h1 {
+  color: tomato;
+}
+blockquote {
+  color: gray;
+}
+blockquote + h3 {
+  text-align: center;
+}
+h3 {
+  color: tomato;
+  margin-left: 25px;
+
+  text-align: left;
+}
+address {
+  display: inline;
+  font-size: 16px;
+  color: white;
+}
+span {
+  color: white;
+  font-size: 16px;
+}
+/* item1 close */
+
+/* item2 open */
+.item2 {
+  flex: 2;
+  margin-left: 25px;
+}
+.item2 > h2 {
+  text-align: left;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 30px;
+}
+img {
+  width: 100%;
+  border-radius: 10%;
+}
+.item2 > h2:nth-last-of-type(1) {
+  color: tomato;
+}
+/* item2 close */
+
+/* topbar  open*/
+a {
+  text-decoration: none;
+  color: grey;
+  margin: 15px;
+  font-size: 30px;
+  float: right;
+}
+a:hover {
+  color: tomato;
+  font-size: 40px;
+}
+/* topbar  close*/
+
+/* containerProfile close */
