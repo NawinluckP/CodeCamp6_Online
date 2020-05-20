@@ -6,24 +6,26 @@ form {
   background-color: white;
   margin: auto;
   width: 50%;
+  padding-top: 30px;
 }
 .fromecontainer {
   display: flex;
   flex-direction: row;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 20px;
 }
 .item1 {
   flex: 1;
-  line-height: 50px;
+  line-height: 20px;
 }
 .item2 {
   flex: 1;
-  line-height: 50px;
+  line-height: 20px;
 }
 input {
   font-size: 20px;
-  height: 50%;
+  height: auto;
   width: 60%;
   color: gray;
   border: grey solid 1px;
@@ -36,11 +38,12 @@ input {
 
 select {
   font-size: 20px;
-  height: 50%;
+  height: auto;
   width: 60%;
   color: gray;
   border: grey solid 1px;
   background-color: white;
+  padding: 30px;
 }
 
 #bottombar {
@@ -60,6 +63,8 @@ button {
 /* ------------ */
 input[type="date"] {
   text-align: center;
+  height: auto;
+  line-height: 10px;
 }
 ::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);
@@ -75,7 +80,7 @@ input[type="date"]::-webkit-calendar-paicker-indicator {
 }
 /* ---------- */
 /* -------------- */
-input[type="number"] {
+/* input[type="number"] {
   position: relative;
 }
 input[type="number"]::-webkit-inner-spin-button {
@@ -88,13 +93,11 @@ input[type="number"]::-webkit-inner-spin-button {
   top: 0;
   right: 0;
   height: 100%;
-}
-
+} */
 /* ----------- */
 label {
   font-weight: bold;
   display: block;
-  text-align: text-bottom;
 }
 input:disabled {
   background-color: gainsboro;
