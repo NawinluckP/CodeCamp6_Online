@@ -1,0 +1,101 @@
+body {
+  background-color: #2d2d2d;
+  color: black;
+}
+form {
+  background-color: white;
+  margin: auto;
+  width: 50%;
+}
+.fromecontainer {
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.item1 {
+  flex: 1;
+  line-height: 50px;
+}
+.item2 {
+  flex: 1;
+  line-height: 50px;
+}
+input {
+  font-size: 20px;
+  height: 50%;
+  width: 60%;
+  color: gray;
+  border: grey solid 1px;
+  background-color: white;
+  border-radius: 5px;
+}
+#quantity {
+  text-align: center;
+}
+
+select {
+  font-size: 20px;
+  height: 50%;
+  width: 60%;
+  color: gray;
+  border: grey solid 1px;
+  background-color: white;
+}
+
+#bottombar {
+  margin-top: 30px;
+  background-color: whitesmoke;
+  border-top: solid 1px gray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+button {
+  background-color: coral;
+  border-radius: 5px;
+  padding: 20px;
+  font-weight: bold;
+  color: white;
+}
+/* ------------ */
+input[type="date"] {
+  text-align: center;
+}
+::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg fill="%23000" fill-opacity=".54" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/%3E%3Cpath d="M0 0h24v24H0z" fill="none"/%3E%3C/svg%3E');
+  cursor: pointer;
+}
+/* ปิดลูกศร  pointer กำหนดรูปเวลาคลิก*/
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-paicker-indicator {
+  display: none;
+  -webkit-apperarance: none;
+}
+/* ---------- */
+/* -------------- */
+input[type="number"] {
+  position: relative;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: inner-spin-button !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+/* ----------- */
+label {
+  font-weight: bold;
+  display: block;
+  text-align: text-bottom;
+}
+input:disabled {
+  background-color: gainsboro;
+}

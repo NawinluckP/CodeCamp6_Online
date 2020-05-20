@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="booking.css" />
+    <title>Booking</title>
+  </head>
+  <body>
+    <form action="/action_page.php" id="flyform" class="flyingform">
+      <div class="fromecontainer">
+        <div class="item1">
+          <label for="flying">Flying from</label>
+          <select id="flying" name="flylist" form="flyform">
+            <option value="karachi,Pakist">karachi,Pakist</option>
+            <option value="karachi,Pakist2">karachi,Pakist2</option>
+            <option value="karachi,Pakist3">karachi,Pakist3</option>
+            <option value="karachi,Pakist4">karachi,Pakist4</option>
+          </select>
+        </div>
+        <div class="item2">
+          <label for="flying">To</label>
+          <select id="flying" name="flylist" form="flyform">
+            <option value="karachi,Pakist">karachi,Pakist</option>
+            <option value="karachi,Pakist2">karachi,Pakist2</option>
+            <option value="karachi,Pakist3">karachi,Pakist3</option>
+            <option value="karachi,Pakist4">karachi,Pakist4</option>
+          </select>
+        </div>
+      </div>
+      <div class="fromecontainer">
+        <div class="item1">
+          <label for="birthday">Departing</label>
+          <input  type="date" id="birthday" name="birthday" form="flyform" disabled value="2020-05-08" >
+          </input>
+        </div>
+        <div class="item2">
+          <label for="birthday">Returning</label>
+          <input  type="date" id="birthday" name="birthday" form="flyform" >
+          </input>
+        </div>
+      </div>
+      <div class="fromecontainer">
+        <div class="item1">
+          <label for="quantity">Adult</label>
+          <input id="quantity" type="number" name="quantity" form="flyform" min="0" max ="5" value="1">
+          </input>
+        </div>
+        <div class="item1">
+            <label for="quantity">Child</label>
+            <input id="quantity" type="number" name="quantity" form="flyform" min="0" max ="5" value="0">
+            </input>
+          </div>
+          <div class="item1">
+            <label for="quantity">Infant</label>
+            <input id="quantity" type="number" name="quantity" form="flyform" min="0" max ="5" value="0">
+            </input>
+          </div>
+          <div class="item1">
+            <label for="currency" style="color: coral;">Currency</label>
+            <select id="currency" form="flyform" name="currency" >
+                <option value="PKR" >PKR</option>
+                <option value="PKR">PKR</option>
+                <option value="PKR">PKR</option>
+                <option value="PKR">PKR</option>
+              </select>
+          </div>
+  
+      </div>
+      <div id="bottombar">
+        <div class="fromecontainer">
+            <button>SEARCH</button>
+            </div>
+      </div>
+    </form>
+  
+  </body>
+</html>
