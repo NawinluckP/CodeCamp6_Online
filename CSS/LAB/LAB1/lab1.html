@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lab1</title>
+  </head>
+  <body>
+    <h1 style="text-align: center;">LAB1 นาวินลักษณ์ แพสาหร่าย</h1>
+    <ol>
+      <h2>
+          <li>css syntax ประกอบด้วยอะไรบ้าง</h2>
+          <ul>
+              <li>    
+              <p>
+              ประกอบไปด้วย &nbsp; <strong>Selector{Property:value}</strong>&nbsp; &nbsp; **Property,value คือ Declaration**
+            </p>
+        </li>
+    </ul>
+      </li>
+      <h2><li>การเขียน CSS มีกี่แบบอะไรบ้าง</h2>
+        <ul>
+            <li>
+                <p> <b>Inline</b> คือการเขียน CSS ไว้ใน Tag Element <br>
+                <b>ตัวอย่าง</b>  &lt;p style=”font-size: 0.9em; width: 200px; border: solid 1px #000000”&gt; ตัวหนังสือสีดำ อยู่ใน แทก P  &lt;/p&gt;
+            </p>
+            </li>
+            <li>
+                <p> <b>Internal</b> คือการเขียนแยก CSS ออกจาก  Tag Element แต่ยังอยู่ใน File.html <br>
+                <p>ตัวอย่าง</p>
+                <img src="../imgLab/Internal.png" alt="codeimg">
+            </p>
+            </li>
+            <li>
+                <p> <b>External</b> คือการเขียนแยก CSS ออกมาเป็น File.css ต่างหาก แล้วนำไปใช้ในหน้าของ File.html โดนใช้ Tag Link <br>
+                <p>  <b>ตัวอย่าง</b> style ใน File.css</p>
+                <img src="../imgLab/filecss.png" alt="codeimg">
+                <p>  <b>ตัวอย่าง</b>  การนำ File.css ไปเชื่อมต่อกับ File.html</p>
+                <img src="../imgLab/filehtml.png" alt="codeimg">
+            </p>
+            </li>
+        </ul>
+      </li>
+      <h2>
+        <li> Combinator  มีกี่แบบอะไรบ้าง</h2>  
+        </li> 
+        <table > 
+            <caption > <h3 ><b>Combinator</b></h3> </caption>
+            <thead>
+              <tr>
+                <th>Combinator</th>
+                <th>exposition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>div p</td>
+                <td>เข้าถึง Tag p ทุก Tag ที่อยู่ใน Tag div</td>
+              </tr>
+              <tr>
+                <td>div > p</td>
+                <td>เข้าถึง Tag p ทุก Tag ที่อยู่ใน Tag div</td>
+              </tr>
+              <tr>
+                <td>div + p</td>
+                <td>เข้าถึง Tag p ตัวแรกที่อยุ่ ถัดจาก Tag div</td>
+              </tr>
+              <tr>
+                <td>div ~ p</td>
+                <td>เข้าถึง Tag p ทุกตัวที่อยุ่ ถัดจาก Tag div</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>
+            <li> Selecter  มีกี่แบบอะไรบ้าง</h2>  
+            </li> 
+            <table > 
+                <caption > <h3 ><b>Selecter</b></h3> </caption>
+                <thead>
+                  <tr>
+                    <th>Selecter</th>
+                    <th>exposition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>.class</td>
+                        <td>เข้าถึง Tag ที่มี class="...."</td>
+                      </tr>
+                      <tr>
+                        <td>.class1 .class2</td>
+                        <td>เข้าถึง Tag ที่มี class="...." ทั้ง class1 และ class2</td>
+                      </tr>
+                      <tr>
+                        <td>#id</td>
+                        <td>เข้าถึง Tag ที่มี id="...." </td>
+                      </tr>
+                      <tr>
+                        <td>*</td>
+                        <td>เข้าถึง ทุก Tag  </td>
+                      </tr>
+                      <tr>
+                        <td>element</td>
+                        <td>เข้าถึง tag elemenet ที่กำหนด</td>
+                      </tr>
+                      <tr>
+                        <td>element.class</td>
+                        <td>เข้าถึง tag elemenet ที่กำหนด และ tag ที่มี class="...."</td>
+                      </tr>
+                      <tr>
+                        <td>element1,element2</td>
+                        <td>เข้าถึง tag elemenet1 และ element2</td>
+                      </tr>
+                      <tr>
+                        <td>element1,element2</td>
+                        <td>เข้าถึง tag elemenet1 และ element2</td>
+                      </tr>
+                      <tr>
+                        <td>[attribute]</td>
+                        <td>เข้าถึง Tag ที่มี attribute</td>
+                      </tr>
+                      <tr>
+                        <td>[attribute = value]</td>
+                        <td>เข้าถึง Tag ที่มี attribute ที่มีค่าว่า ...</td>
+                      </tr>
+                      <tr>
+                        <td>[attribute ~= value]</td>
+                        <td>เข้าถึง Tag ที่มี attribute ที่มีค่าว่า ...</td>
+                      </tr>
+                      <tr>
+                        <td>[attribute |= value]</td>
+                        <td>เข้าถึง Tag ที่มี attribute ที่ข้างหน้ามีค่าว่า ...</td>
+                      </tr>
+                      <tr>
+                        <td>[attribute ^= value]</td>
+                        <td>เข้าถึง Tag ที่มี attribute ที่ข้างหน้ามีค่าว่า ...</td>
+                      </tr>
+                      <tr>
+                        <td>[attribute $= value]</td>
+                        <td>เข้าถึง Tag ที่มี attribute ที่มีค่าว่า ...</td>
+                      </tr>
+                      <tr>
+                        <td>[attribute *= value]</td>
+                        <td>เข้าถึง Tag ทุกตัวที่มี attribute ที่มีค่าว่า ...</td>
+                      </tr>
+                </tbody>
+              </table>
+              <h2>
+                <li> Property และ value คืออะไรแตกต่างกันอย่างไร</h2>
+                    value  คือค่่าของ propperty  
+                </li> 
+                <h2>
+                    <li> Property ใน precode camp มีกี่กลุ่มอะไรบ้าง</h2>  
+                        <ul>
+                            <li style="font-weight: bold;">
+                                Property for conternt
+                              <ul> 
+                                   <li>color</li>
+                                <li>size</li>
+                                <li>font</li>
+                                <li>text</li>
+                                <li>list-style</li>
+                                <li>Height</li>
+                                <li>Width</li>
+                                <li>background</li>
+                            </ul>
+                        </li>
+                        <li style="font-weight: bold;">
+                            Property for bor der
+                        <ul><li>border</li>
+                            <li>table</li></ul>
+                         
+
+
+                    </li>
+                    <li style="font-weight: bold;">
+                        Property for padding
+                        <ul>  <li>padding</li></ul>
+
+
+                </li>
+                <li style="font-weight: bold;">
+                    Property for margin
+                    <ul>                    <li>margin</li>
+                    </ul>
+
+
+            </li>
+            <li style="font-weight: bold;"> 
+               Property element
+               <ul>       <li>display</li>
+                <li>Height</li>
+                <li>Width</li>
+                <li>Postition</li>
+                <li>Float</li>
+                <li>Align</li>
+                <li>Flex</li>
+                <li>Grid</li></ul>
+        </li>
+                    </ul>
+                    </li> 
+                    <h2>
+                        <li> value unit มีกี่ประเภทอะไรบ้าง</h2> 
+                            <ul>
+                                <li>
+                                    cm
+                                </li>
+                                <li>
+                                    mm
+                                </li>
+                                <li>
+                                    in
+                                </li>
+                                <li>
+                                    px
+                                </li>
+                                <li>
+                                    pt
+                                </li>
+                                <li>
+                                    pc
+                                </li>
+                            </ul>
+                        </li> 
+          
+    </ol>
+
+    <style>
+        *
+        {
+            
+        }
+        table
+        {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table,td,th
+        {
+            border: solid black 1px;
+        }
+        caption
+        {
+            text-align: center;
+        }
+    </style>
+    
+  </body>
+</html>
