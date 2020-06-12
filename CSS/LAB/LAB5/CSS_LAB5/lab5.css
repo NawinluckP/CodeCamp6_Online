@@ -1,0 +1,129 @@
+/* * {
+  border: red solid 1px;
+} */
+body {
+  margin: 0px;
+}
+/* topbar open----------------------------- */
+
+/* section_topbar_1 open*/
+.ul_topbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+  width: 100%;
+}
+
+[title~="ul_topbarR"] {
+  width: 100%;
+}
+.li_topbar {
+  padding: 10px 20px 0px 20px;
+  font-size: 13px;
+}
+[title~="topbarL"] {
+  float: left;
+  border-right: 1px solid #cacfd2;
+}
+[title~="topbarR"] {
+  float: right;
+  border-left: 1px solid #cacfd2;
+}
+.topbar-header {
+  border-bottom: solid 1px #cacfd2;
+  color: #909497;
+  flex-direction: row;
+  overflow: hidden;
+  display: flex;
+}
+/* section_topbar_1 close*/
+
+/* section_topbar_2 open */
+.topbar-header-2 {
+  color: black;
+  flex-direction: row;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  text-align: c;
+}
+.ul_topbar-2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.li_img {
+  padding-left: 20px;
+}
+.ul_topbar2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-right: 100px;
+}
+.li_topbar2 {
+  padding: 25px;
+  float: right;
+  margin-right: 20px;
+}
+#myInput {
+  background-image: url(../CSS_LAB5/img/supermarket.svg);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  vertical-align: baseline;
+}
+[title~="search"] {
+  padding-top: 20px;
+}
+/* section_topbar_2 close */
+
+/* section_topbar_3 open */
+.section_topbar_3 {
+  background-color: #f2f3f4;
+  padding: 30px;
+  border-top: #a6acaf solid 1px;
+  border-bottom: #a6acaf solid 1px;
+  color: #797d7f;
+  text-align: center;
+}
+/* section_topbar_3 close */
+
+/* topbar close -----------------------*/
+
+/* open body---------------- */
+.headbody {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.container_headbody {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.grid_container_imgbody {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid_item_body {
+  position: relative;
+  width: 100%;
+}
+.btn_shop {
+  position: absolute;
+  z-index: 1;
+  top: 80%;
+  right: 80%;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: white 0px;
+  font-size: 15px;
+  box-shadow: 2px 2px 4px #000000;
+}
+/* close body-------------- */
